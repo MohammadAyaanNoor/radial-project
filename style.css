@@ -1,0 +1,360 @@
+@font-face {
+    font-family: poppinsRegular;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppinsLight;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    overflow-x: hidden;
+}
+#nav h2{
+    font-size: 1.5vw;
+    font-family: poppins;
+    text-align: center;
+    padding: 0.8vw;
+}
+#hero{
+    text-align: center;
+
+    
+    line-height: 1;
+    margin-top: 2vh;
+}
+#hero h1{
+    font-size: 6vw;
+    font-family: poppins;
+}
+#hero p{
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family: poppinsRegular;
+    margin-top: 2vh;
+}
+.hero2{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: rgb(251, 234, 212);
+    font-family: poppinsRegular;
+    border-radius: 30px;
+    padding: 1.2vw;
+    font-size: 1.3vw;
+    padding-right: 8vw;
+    margin-right: 2vw;
+}
+button{
+    
+    padding: 1vw 2.2vw;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.3vw;
+    color: white;
+    font-family: poppins;
+    background: linear-gradient(to bottom right,rgb(37, 105, 240),rgb(111, 174, 241) );
+}
+#circles{
+    position: relative;
+    display: flex;
+    margin-top: 14vw;
+    gap: 2.2vw;
+
+}
+ #imagediv{
+    position: absolute;
+    top: 50vh;
+    left: 36.8vw;
+
+    z-index: 9;
+}
+#slidediv{
+    position: absolute;
+    top: 52.8vh;
+    left: 49.5vw;
+    border-radius: 2vw;
+    transform: translate(-50%,0%);
+    background-color: pink;
+    width: 22vw;
+    height: 83.4vh;
+    z-index: 8;
+    display: flex;
+    overflow: hidden;
+    
+
+
+}
+
+#slidediv img{
+    width: 100%;
+    height: 100%;
+    animation-name: screen;
+    animation-duration: 25s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+
+
+    
+}
+
+
+
+
+
+ #imagediv img{
+
+    width: 25vw;
+}
+#circles::-webkit-scrollbar{
+    display: none;
+}
+.circle{
+    flex-shrink: 0;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    margin-left: 2.5vw;
+    overflow: hidden;
+    animation-name: circle;
+    animation-duration: 25s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+}
+.circle img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#text{
+    margin-top: 40vw;
+}
+#text h1{
+    text-align: center;
+    font-family: poppins;
+    font-weight: 900;
+    font-size: 4vw;
+    
+}
+#text h1:nth-child(3){
+    color: rgb(55, 139, 228);
+}
+.hero3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vh;
+    padding: 2vh 3vw;
+}
+.hero3 #leftalign{
+    width: 50vw;
+    height: 32vw;
+    background-image: url(./Untitled\ design.png);
+    background-position: center;
+    background-size: cover;
+
+
+}
+.hero3 #rightalign {
+    font-family: poppinsRegular;
+    padding: 2vh 3vw;
+} 
+#rightalign h1{
+    font-size: 4vw;
+    line-height: 1;
+    margin-bottom: 3vh;
+    font-family: poppins;
+
+}
+#second{
+    flex-direction: row-reverse;
+}
+#second #leftalign{
+    border-radius: 50%;
+    width: 40vw;
+    overflow: hidden;
+    background-image: url(https://i.pinimg.com/564x/64/85/79/6485790a5f3c521aa96ab631bcc4a178.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#third #leftalign{
+    background-image: url(https://i.pinimg.com/564x/61/86/09/6186093deeb89063272cd34303634039.jpg);
+    background-position: top ;
+
+}
+
+
+#footer{
+    background-color: rgb(2, 2, 83);
+    text-align: center;
+    color: white;
+    font-family: poppins;
+    padding: 1.2vw 1.3vw;
+}
+#footer h2{
+    font-size: 3vw;
+}
+#footer #foot{
+    margin-top: 3vw;
+    
+}
+#footer #foot button{
+    background: white;
+    color: black;
+    
+}
+#footer #foot input{
+    background-color: rgb(63, 63, 63);
+    color: white;
+    
+}
+#footer #foot input::placeholder{
+    color: rgb(200, 188, 188);
+}
+#links{
+    margin-top: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin-bottom: 3vw;
+}
+#links a{
+    text-decoration: none;
+    color: white;
+    font-family: poppinsRegular;
+    font-size: 1.3vw;
+}
+small{
+
+    padding: 1.2vw 1.4vw;
+    color: rgb(142, 140, 140);
+}
+@keyframes screen {
+    0%{
+        transform: translateX(0);
+    }
+    12.5%{
+        transform: translateX(-100%);
+    }
+    25%{
+        transform: translateX(-200%);
+    }
+    37.5%{
+        transform: translateX(-300%);
+    }
+    50%{
+        transform: translateX(-400%);
+    }
+    62.5%{
+        transform: translateX(-500%);
+    }
+    75%{
+        transform: translateX(-600%);
+    }
+    87.5%{
+        transform: translateX(-700%);
+    }
+    100%{
+        transform: translateX(-800%);
+    }
+
+    
+}
+@keyframes circle {
+    0%{
+        transform: translateX(0);
+    }
+    12.5%{
+        transform: translateX(-130%);
+    }
+    25%{
+        transform: translateX(-265%);
+    }
+    37.5%{
+        transform: translateX(-395%);
+    }
+    50%{
+        transform: translateX(-530%);
+    }
+    62.5%{
+        transform: translateX(-655%);
+    }
+    75%{
+        transform: translateX(-785%);
+    }
+    87.5%{
+        transform: translateX(-918%);
+    }
+    100%{
+        transform: translateX(-1053%);
+    }
+}
+@media(max-width:600px){
+    #nav h2{
+        font-size: 3.1vw;
+    }
+    #main #imagediv{
+        top: 41vw;
+    }
+    #slidediv{
+        width: 22vw;
+    height: 47.4vw;
+        top: 42.8vw;
+    }
+    #slidediv img{
+        height: 100%;
+        width: 100%;
+    }
+    .hero3{
+        margin-top: 1.5vw;
+    }
+    .hero3 #leftalign{
+        width: 45vw;
+        height: 32vw;
+    }
+    #second #leftalign{
+        width: 42vw;
+        height: 35vw;
+    }
+    .hero3 #rightalign{
+        text-align: left;
+    }
+    .hero3 p{
+        width: 30vw;
+        margin-top: -3.5vw;
+        text-align: left;
+        font-size: 2vw;
+
+    }
+    #footer #links a{
+        font-size: 1.5vw;
+    }
+    #footer small{
+        font-size: 1.7vw;
+    }
+}
